@@ -1,7 +1,9 @@
-package com.etiya.components;
+package com.etiya.components.sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.etiya.components.R;
 
 public class MainActivity extends AppCompatActivity {
 

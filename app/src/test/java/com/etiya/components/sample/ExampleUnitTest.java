@@ -1,4 +1,4 @@
-package com.etiya.components;
+package com.etiya.components.sample;
 
 import org.junit.Test;
 
