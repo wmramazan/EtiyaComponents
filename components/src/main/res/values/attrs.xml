@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EtiyaCardView">
+        <attr name="card_accordion_title" format="string|reference" />
+        <attr name="card_accordion_state" format="enum">
+            <enum name="collapsed" value="0" />
+            <enum name="expanded" value="1" />
+        </attr>
+        <attr name="android:orientation" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="EtiyaCardViewGroup">
+        <attr name="card_view_group_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="accordion" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="EtiyaSelectableView">
+        <attr name="selected" format="boolean" />
+        <attr name="enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EtiyaSelectableViewGroup">
+        <attr name="selectable_view_group_type" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multiple" value="1" />
+        </attr>
+        <attr name="selectable_view_group_limit" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="EtiyaMenu">
+        <attr name="android:orientation" />
+    </declare-styleable>
+
+    <declare-styleable name="EtiyaMenuItemView">
+        <attr name="menu_item_name" format="string|reference" />
+    </declare-styleable>
+
+</resources>

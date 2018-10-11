@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="components_padding">16dp</dimen>
+    <dimen name="components_radius">18dp</dimen>
+
+    <!-- EtiyaCardView -->
+    <dimen name="components_card_accordion_padding">16dp</dimen>
+
+    <!-- EtiyaSelectableView -->
+    <dimen name="components_selectable_view_padding">16dp</dimen>
+
+    <!-- EtiyaSelectableViewGroup -->
+    <dimen name="components_selectable_view_group_margin_top">8dp</dimen>
+
+    <!-- EtiyaDialog -->
+    <dimen name="components_dialog_margin">16dp</dimen>
+    <dimen name="components_dialog_title_margin_left">2dp</dimen>
+    <dimen name="components_dialog_title_margin_right">32dp</dimen>
+    <dimen name="components_dialog_message_padding">8dp</dimen>
+
+    <!-- EtiyaMenuItemView -->
+    <dimen name="components_menu_item_text_size">8sp</dimen>
+</resources>
