@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         EtiyaListItem listItem = new EtiyaListItem(this);
         listItem.setTitle(getString(R.string.components));
-        listItem.setList(getResources().getStringArray(R.array.components));
+        listItem.setList(getResources().getStringArray(R.array.components), true);
 
         cardListItem.addView(listItem);
 

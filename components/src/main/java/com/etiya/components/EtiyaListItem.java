@@ -142,8 +142,14 @@ public class EtiyaListItem extends RelativeLayout {
     /**
      * Sets list for selection.
      * @param list String array
+     * @param selectFirst boolean value, true if the first item will be selected
      */
-    public void setList(String[] list) {
+    public void setList(String[] list, boolean selectFirst) {
+        if (selectFirst) {
+            setItem(list[0]);
+            setItemIndex(0);
+        }
+
         setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
             builder.setSingleChoiceItems(list, getItemIndex(), (dialogInterface, i) -> {

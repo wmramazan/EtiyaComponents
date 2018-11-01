@@ -71,7 +71,15 @@
                     android:id="@+id/card_list_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:card_accordion_title="@string/list_item" />
+                    app:card_accordion_title="@string/list_item">
+
+                    <com.etiya.components.EtiyaListItem
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:list_item_title="@string/components"
+                        app:list_item="@string/list_item"/>
+
+                </com.etiya.components.EtiyaCardView>
 
                 <com.etiya.components.EtiyaCardView
                     android:layout_width="match_parent"
