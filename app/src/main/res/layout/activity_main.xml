@@ -10,250 +10,265 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/components_padding">
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingBottom="@dimen/components_padding"
-            android:src="@drawable/etiya_logo"
-            android:contentDescription="@string/logo"/>
-
-        <com.etiya.components.EtiyaTabLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/components_margin">
+            android:padding="@dimen/components_padding"
+            android:background="@color/ic_launcher_background"
+            android:orientation="vertical">
 
-            <com.etiya.components.EtiyaTabItem
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tab_list_items"
-                app:components_tab_item_layout_id="@id/group_list_items"
-                app:components_tab_item_selected="true"/>
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/etiya_logo" />
 
-            <com.etiya.components.EtiyaTabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tab_selectable_view"
-                app:components_tab_item_layout_id="@id/group_selectable_view"/>
+        </RelativeLayout>
 
-            <com.etiya.components.EtiyaTabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tab_menu"
-                app:components_tab_item_layout_id="@id/group_menu"/>
-
-        </com.etiya.components.EtiyaTabLayout>
-
-        <com.etiya.components.EtiyaCardViewGroup
-            android:id="@+id/group_list_items"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:card_view_group_type="accordion">
+            android:orientation="vertical"
+            android:padding="@dimen/components_padding">
 
-            <com.etiya.components.EtiyaCardView
-                android:id="@+id/card_list_item"
+            <com.etiya.components.EtiyaTabLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:card_accordion_title="@string/list_item" />
+                android:layout_marginBottom="@dimen/components_margin">
 
-            <com.etiya.components.EtiyaCardView
+                <com.etiya.components.EtiyaTabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_list_items"
+                    app:components_tab_item_layout_id="@id/group_list_items"
+                    app:components_tab_item_selected="true"/>
+
+                <com.etiya.components.EtiyaTabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_selectable_view"
+                    app:components_tab_item_layout_id="@id/group_selectable_view"/>
+
+                <com.etiya.components.EtiyaTabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_menu"
+                    app:components_tab_item_layout_id="@id/group_menu"/>
+
+            </com.etiya.components.EtiyaTabLayout>
+
+            <com.etiya.components.EtiyaCardViewGroup
+                android:id="@+id/group_list_items"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:card_accordion_title="@string/selectable_list_item">
+                app:card_view_group_type="accordion">
 
-                <com.etiya.components.EtiyaSelectableListItem
+                <com.etiya.components.EtiyaCardView
+                    android:id="@+id/card_list_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:list_item_title="@string/components"
-                    app:list_item="@string/list_item"
-                    app:list_item_selected="true" />
+                    app:card_accordion_title="@string/list_item" />
 
-            </com.etiya.components.EtiyaCardView>
-
-        </com.etiya.components.EtiyaCardViewGroup>
-
-        <com.etiya.components.EtiyaCardViewGroup
-            android:id="@+id/group_selectable_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:card_view_group_type="accordion">
-
-            <com.etiya.components.EtiyaCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:card_accordion_title="@string/single_choice">
-
-                <com.etiya.components.EtiyaSelectableViewGroup
+                <com.etiya.components.EtiyaCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:selectable_view_group_type="single">
+                    app:card_accordion_title="@string/selectable_list_item">
 
-                    <com.etiya.components.EtiyaSelectableView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
-
-                    </com.etiya.components.EtiyaSelectableView>
-
-                    <com.etiya.components.EtiyaSelectableView
+                    <com.etiya.components.EtiyaSelectableListItem
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/selectable_view_margin_top">
+                        app:list_item_title="@string/components"
+                        app:list_item="@string/list_item"
+                        app:list_item_selected="true" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
+                </com.etiya.components.EtiyaCardView>
 
-                    </com.etiya.components.EtiyaSelectableView>
+            </com.etiya.components.EtiyaCardViewGroup>
 
-                    <com.etiya.components.EtiyaSelectableView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/selectable_view_margin_top"
-                        app:enabled="false">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
-
-                    </com.etiya.components.EtiyaSelectableView>
-
-                </com.etiya.components.EtiyaSelectableViewGroup>
-
-            </com.etiya.components.EtiyaCardView>
-
-            <com.etiya.components.EtiyaCardView
+            <com.etiya.components.EtiyaCardViewGroup
+                android:id="@+id/group_selectable_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:card_accordion_title="@string/multiple_choice">
+                app:card_view_group_type="accordion">
 
-                <com.etiya.components.EtiyaSelectableViewGroup
+                <com.etiya.components.EtiyaCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:selectable_view_group_type="multiple">
+                    app:card_accordion_title="@string/single_choice">
 
-                    <com.etiya.components.EtiyaSelectableView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
-
-                    </com.etiya.components.EtiyaSelectableView>
-
-                    <com.etiya.components.EtiyaSelectableView
+                    <com.etiya.components.EtiyaSelectableViewGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/selectable_view_margin_top">
+                        app:selectable_view_group_type="single">
 
-                        <TextView
+                        <com.etiya.components.EtiyaSelectableView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
+
+                        </com.etiya.components.EtiyaSelectableView>
+
+                        <com.etiya.components.EtiyaSelectableView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
+                            android:layout_marginTop="@dimen/selectable_view_margin_top">
 
-                    </com.etiya.components.EtiyaSelectableView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
 
-                    <com.etiya.components.EtiyaSelectableView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/selectable_view_margin_top">
+                        </com.etiya.components.EtiyaSelectableView>
 
-                        <TextView
+                        <com.etiya.components.EtiyaSelectableView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
+                            android:layout_marginTop="@dimen/selectable_view_margin_top"
+                            app:enabled="false">
 
-                    </com.etiya.components.EtiyaSelectableView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
 
-                </com.etiya.components.EtiyaSelectableViewGroup>
+                        </com.etiya.components.EtiyaSelectableView>
 
-            </com.etiya.components.EtiyaCardView>
+                    </com.etiya.components.EtiyaSelectableViewGroup>
 
-            <com.etiya.components.EtiyaCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:card_accordion_title="@string/limited_multiple_choice">
+                </com.etiya.components.EtiyaCardView>
 
-                <com.etiya.components.EtiyaSelectableViewGroup
+                <com.etiya.components.EtiyaCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:selectable_view_group_type="multiple"
-                    app:selectable_view_group_limit="2">
+                    app:card_accordion_title="@string/multiple_choice">
 
-                    <com.etiya.components.EtiyaSelectableView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
-
-                    </com.etiya.components.EtiyaSelectableView>
-
-                    <com.etiya.components.EtiyaSelectableView
+                    <com.etiya.components.EtiyaSelectableViewGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/selectable_view_margin_top">
+                        app:selectable_view_group_type="multiple">
 
-                        <TextView
+                        <com.etiya.components.EtiyaSelectableView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
+
+                        </com.etiya.components.EtiyaSelectableView>
+
+                        <com.etiya.components.EtiyaSelectableView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
+                            android:layout_marginTop="@dimen/selectable_view_margin_top">
 
-                    </com.etiya.components.EtiyaSelectableView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
 
-                    <com.etiya.components.EtiyaSelectableView
+                        </com.etiya.components.EtiyaSelectableView>
+
+                        <com.etiya.components.EtiyaSelectableView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/selectable_view_margin_top">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
+
+                        </com.etiya.components.EtiyaSelectableView>
+
+                    </com.etiya.components.EtiyaSelectableViewGroup>
+
+                </com.etiya.components.EtiyaCardView>
+
+                <com.etiya.components.EtiyaCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:card_accordion_title="@string/limited_multiple_choice">
+
+                    <com.etiya.components.EtiyaSelectableViewGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/selectable_view_margin_top">
+                        app:selectable_view_group_type="multiple"
+                        app:selectable_view_group_limit="2">
 
-                        <TextView
+                        <com.etiya.components.EtiyaSelectableView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
+
+                        </com.etiya.components.EtiyaSelectableView>
+
+                        <com.etiya.components.EtiyaSelectableView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/example_choice"/>
+                            android:layout_marginTop="@dimen/selectable_view_margin_top">
 
-                    </com.etiya.components.EtiyaSelectableView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
 
-                </com.etiya.components.EtiyaSelectableViewGroup>
+                        </com.etiya.components.EtiyaSelectableView>
 
-            </com.etiya.components.EtiyaCardView>
+                        <com.etiya.components.EtiyaSelectableView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/selectable_view_margin_top">
 
-        </com.etiya.components.EtiyaCardViewGroup>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/example_choice"/>
 
-        <com.etiya.components.EtiyaCardViewGroup
-            android:id="@+id/group_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:card_view_group_type="accordion">
+                        </com.etiya.components.EtiyaSelectableView>
 
-            <com.etiya.components.EtiyaCardView
-                android:id="@+id/card_vertical_menu"
+                    </com.etiya.components.EtiyaSelectableViewGroup>
+
+                </com.etiya.components.EtiyaCardView>
+
+            </com.etiya.components.EtiyaCardViewGroup>
+
+            <com.etiya.components.EtiyaCardViewGroup
+                android:id="@+id/group_menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:card_accordion_title="@string/vertical_menu"/>
+                app:card_view_group_type="accordion">
 
-            <com.etiya.components.EtiyaCardView
-                android:id="@+id/card_horizontal_menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:card_accordion_title="@string/horizontal_menu">
+                <com.etiya.components.EtiyaCardView
+                    android:id="@+id/card_vertical_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:card_accordion_title="@string/vertical_menu"/>
 
-            </com.etiya.components.EtiyaCardView>
+                <com.etiya.components.EtiyaCardView
+                    android:id="@+id/card_horizontal_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:card_accordion_title="@string/horizontal_menu">
 
-        </com.etiya.components.EtiyaCardViewGroup>
+                </com.etiya.components.EtiyaCardView>
+
+            </com.etiya.components.EtiyaCardViewGroup>
+
+        </LinearLayout>
 
     </LinearLayout>
 
