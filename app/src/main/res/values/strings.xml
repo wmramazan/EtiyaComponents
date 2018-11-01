@@ -18,6 +18,14 @@
     <string name="tab_selectable_view">Selectable View</string>
     <string name="tab_menu">Menu</string>
 
+    <string name="components">Components</string>
+
+    <string-array name="components">
+        <item>EtiyaCardView</item>
+        <item>EtiyaTabLayout</item>
+        <item>EtiyaListItem</item>
+    </string-array>
+
     <string name="dialog_title">Information</string>
     <string name="dialog_message">This application has been developed to demonstrate EtiyaComponents library.</string>
 </resources>
