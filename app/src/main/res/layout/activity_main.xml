@@ -76,8 +76,7 @@
                     <com.etiya.components.EtiyaListItem
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:list_item_title="@string/components"
-                        app:list_item="@string/list_item"/>
+                        app:list_item_title="@string/components"/>
 
                 </com.etiya.components.EtiyaCardView>
 
