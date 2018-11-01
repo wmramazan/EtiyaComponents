@@ -5,8 +5,6 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.etiya.components.util.Utils;
-
 /**
  * EtiyaSelectableListItem
  * This view is used to show one of items in a selection list.
