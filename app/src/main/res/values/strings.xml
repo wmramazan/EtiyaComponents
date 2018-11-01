@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">EtiyaComponents</string>
+    <string name="logo">Logo</string>
+
+    <string name="list_item">List Item</string>
+    <string name="selectable_list_item">Selectable List Item</string>
+
+    <string name="single_choice">Single Choice</string>
+    <string name="multiple_choice">Multiple Choice</string>
+    <string name="limited_multiple_choice">Limited Multiple Choice</string>
+
+    <string name="vertical_menu">Vertical Menu</string>
+    <string name="horizontal_menu">Horizontal Menu</string>
+
+    <string name="example_choice">Example Choice</string>
+
+    <string name="tab_list_items">List Items</string>
+    <string name="tab_selectable_view">Selectable View</string>
+    <string name="tab_menu">Menu</string>
+
+    <string name="dialog_title">Information</string>
+    <string name="dialog_message">This application has been developed to demonstrate EtiyaComponents library.</string>
 </resources>

@@ -9,6 +9,7 @@ import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 /**
  * EtiyaDialog
@@ -29,7 +30,7 @@ public class EtiyaDialog {
 
     private AppCompatTextView etvDialogTitle;
     private AppCompatTextView etvDialogMessage;
-    private EtiyaCardView ecvDialogContent;
+    private LinearLayout llDialogContent;
 
     public EtiyaDialog(Context context) {
         this.context = context;
@@ -53,10 +54,10 @@ public class EtiyaDialog {
         ImageView ivDialogClose = view.findViewById(R.id.components_dialog_close);
         etvDialogTitle = view.findViewById(R.id.components_dialog_title);
         etvDialogMessage = view.findViewById(R.id.components_dialog_message);
-        ecvDialogContent = view.findViewById(R.id.components_dialog_content);
+        llDialogContent = view.findViewById(R.id.components_dialog_content);
 
         if (null != content)
-            ecvDialogContent.addView(content);
+            llDialogContent.addView(content);
 
         ivDialogClose.setOnClickListener(v -> dismiss());
 
@@ -107,7 +108,7 @@ public class EtiyaDialog {
      * @param view View
      */
     public void addView(View view) {
-        ecvDialogContent.addView(view);
+        llDialogContent.addView(view);
     }
 
     /**

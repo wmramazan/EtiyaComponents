@@ -89,13 +89,15 @@ public class EtiyaSelectableViewGroup extends LinearLayout {
         onClickListener = v -> {
             Log.d(DEBUG_TAG, "View Type: " + type);
             EtiyaSelectableView selectableView = (EtiyaSelectableView) v;
-            if (selectableView.isSelected())
-                unselectView(selectableView);
-            else if (type == SINGLE_CHOICE || limit == 1) {
-                removeSelection();
-                selectView(selectableView);
-            } else if (limit == 0 || selectedViews.size() < limit)
-                selectView(selectableView);
+            if (selectableView.isEnabled()) {
+                if (selectableView.isSelected())
+                    unselectView(selectableView);
+                else if (type == SINGLE_CHOICE || limit == 1) {
+                    removeSelection();
+                    selectView(selectableView);
+                } else if (limit == 0 || selectedViews.size() < limit)
+                    selectView(selectableView);
+            }
         };
 
         layoutParams = new MarginLayoutParams(

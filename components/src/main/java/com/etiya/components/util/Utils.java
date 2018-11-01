@@ -17,4 +17,8 @@ public class Utils {
         return value.type == TypedValue.TYPE_REFERENCE ? resources.getString(value.data) : value.string.toString();
     }
 
+    public static int getColorFromAttrs(Resources resources, TypedValue a, @StyleableRes int index) {
+        return 0;
+    }
+
 }

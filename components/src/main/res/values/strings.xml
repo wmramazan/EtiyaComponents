@@ -2,5 +2,6 @@
 
     <string name="components_close">Close</string>
     <string name="components_collapse_or_expand">Collapse / Expand</string>
+    <string name="components_list_item_icon">List Item Icon</string>
     
 </resources>

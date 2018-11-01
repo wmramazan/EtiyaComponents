@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="components_primary">#26dc87</color>
-    <color name="components_primary_selected">#1cac6a</color>
-    <color name="components_primary_disabled">#d2d2d2</color>
-    <color name="components_primary_border">#00d672</color>
-
-    <color name="components_secondary">#fff</color>
-    <color name="components_secondary_selected">#c9c9c9</color>
-    <color name="components_secondary_border">#000</color>
-
     <color name="components_black">#000000</color>
     <color name="components_blue">#3259EE</color>
+    <color name="components_indigo">#3f51b5</color>
     <color name="components_gray">#bfbfbf</color>
+    <color name="components_light_gray">#e6e6e6</color>
+    <color name="components_dark_gray">#898989</color>
 
     <!-- EtiyaSelectableView -->
     <color name="components_selectable_view">#f5f5f5</color>

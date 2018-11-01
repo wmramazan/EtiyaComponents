@@ -29,8 +29,8 @@ public class EtiyaMenu extends LinearLayout {
 
     protected OnClickListener onClickListener;
     protected OnMenuItemSelectListener onMenuItemSelectListener;
-    protected ArrayList<EtiyaMenuItemView> menuItemViews;
-    protected EtiyaMenuItemView selectedMenuItemView;
+    protected ArrayList<EtiyaMenuItem> menuItemViews;
+    protected EtiyaMenuItem selectedMenuItemView;
     protected int orientation;
 
     public EtiyaMenu(Context context) {
@@ -75,7 +75,7 @@ public class EtiyaMenu extends LinearLayout {
         onClickListener = v -> {
             if (null != selectedMenuItemView)
                 selectedMenuItemView.setSelected(false);
-            setSelected((EtiyaMenuItemView) v);
+            setSelected((EtiyaMenuItem) v);
 
             if (null != onMenuItemSelectListener)
                 onMenuItemSelectListener.onMenuItemSelect(menuItemViews.indexOf(selectedMenuItemView));
@@ -94,12 +94,12 @@ public class EtiyaMenu extends LinearLayout {
      * @param view View
      */
     protected void addMenuView(View view) {
-        if (view instanceof EtiyaMenuItemView) {
+        if (view instanceof EtiyaMenuItem) {
             if (orientation == HORIZONTAL)
                 addSpaceView();
 
             //view.setLayoutParams(layoutParams);
-            EtiyaMenuItemView menuItemView = (EtiyaMenuItemView) view;
+            EtiyaMenuItem menuItemView = (EtiyaMenuItem) view;
             menuItemView.setOnClickListener(onClickListener);
             menuItemViews.add(menuItemView);
         } else
@@ -151,7 +151,7 @@ public class EtiyaMenu extends LinearLayout {
      * @param name String
      */
     protected void addItem(String name) {
-        EtiyaMenuItemView menuItemView = new EtiyaMenuItemView(getContext());
+        EtiyaMenuItem menuItemView = new EtiyaMenuItem(getContext());
         menuItemView.setText(name);
         addView(menuItemView);
     }
@@ -160,7 +160,7 @@ public class EtiyaMenu extends LinearLayout {
      * Sets selected menu item.
      * @param menuItemView EtiyaMenuItemView
      */
-    protected void setSelected(EtiyaMenuItemView menuItemView) {
+    protected void setSelected(EtiyaMenuItem menuItemView) {
         menuItemView.setSelected(true);
         selectedMenuItemView = menuItemView;
     }
@@ -170,7 +170,7 @@ public class EtiyaMenu extends LinearLayout {
      */
     public void removeSelection() {
         selectedMenuItemView = null;
-        for (EtiyaMenuItemView menuItemView : menuItemViews)
+        for (EtiyaMenuItem menuItemView : menuItemViews)
             menuItemView.setSelected(false);
     }
 
@@ -195,12 +195,11 @@ public class EtiyaMenu extends LinearLayout {
      * @param args String...
      */
     public void setMenuItems(String... args) {
-        for (String arg : args) {
-            addSpaceView();
+        for (String arg : args)
             addItem(arg);
-        }
 
-        addSpaceView();
+        if (orientation == HORIZONTAL)
+            addSpaceView();
     }
 
     /**

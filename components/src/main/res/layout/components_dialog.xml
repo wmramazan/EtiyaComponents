@@ -8,11 +8,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/components_dialog_margin"
+        android:background="@color/components_indigo"
         android:layout_marginLeft="@dimen/components_dialog_margin"
         android:layout_marginStart="@dimen/components_dialog_margin"
         android:layout_marginRight="@dimen/components_dialog_margin"
-        android:layout_marginEnd="@dimen/components_dialog_margin">
+        android:layout_marginEnd="@dimen/components_dialog_margin"
+        android:padding="@dimen/components_padding">
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/components_dialog_title"
@@ -20,12 +21,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginLeft="@dimen/components_dialog_title_margin_left"
-            android:layout_marginStart="@dimen/components_dialog_title_margin_left"
-            android:layout_marginRight="@dimen/components_dialog_title_margin_right"
-            android:layout_marginEnd="@dimen/components_dialog_title_margin_right"
             android:textColor="@android:color/white"
-            android:ellipsize="end" />
+            android:textStyle="bold"
+            android:ellipsize="end"/>
 
         <ImageView
             android:id="@+id/components_dialog_close"
@@ -49,7 +47,7 @@
         android:layout_marginEnd="@dimen/components_dialog_margin"
         android:layout_marginBottom="@dimen/components_dialog_margin">
 
-        <com.etiya.components.EtiyaCardView
+        <LinearLayout
             android:id="@+id/components_dialog_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/components_dialog_message_padding" />
 
-        </com.etiya.components.EtiyaCardView>
+        </LinearLayout>
 
     </ScrollView>
 

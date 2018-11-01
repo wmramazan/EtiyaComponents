@@ -35,8 +35,22 @@
         <attr name="android:orientation" />
     </declare-styleable>
 
-    <declare-styleable name="EtiyaMenuItemView">
-        <attr name="menu_item_name" format="string|reference" />
+    <declare-styleable name="EtiyaMenuItem">
+        <attr name="android:text" />
+        <attr name="android:textColor" />
     </declare-styleable>
 
+    <declare-styleable name="EtiyaListItem">
+        <attr name="list_item_title" format="string|reference" />
+        <attr name="list_item" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EtiyaSelectableListItem">
+        <attr name="list_item_selected" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EtiyaTabItem">
+        <attr name="components_tab_item_selected" format="boolean" />
+        <attr name="components_tab_item_layout_id" format="reference" />
+    </declare-styleable>
 </resources>
