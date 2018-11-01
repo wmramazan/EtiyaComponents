@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/components_indigo"
+        android:background="@color/components_etiya"
         android:layout_marginLeft="@dimen/components_dialog_margin"
         android:layout_marginStart="@dimen/components_dialog_margin"
         android:layout_marginRight="@dimen/components_dialog_margin"

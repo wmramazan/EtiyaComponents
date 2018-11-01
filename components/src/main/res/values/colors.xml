@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="components_etiya">#242342</color>
+    <color name="components_etiya_dark">#1c1a31</color>
+
     <color name="components_black">#000000</color>
-    <color name="components_blue">#3259EE</color>
+    <color name="components_blue">#1b89d8</color>
     <color name="components_indigo">#3f51b5</color>
     <color name="components_gray">#bfbfbf</color>
     <color name="components_light_gray">#e6e6e6</color>

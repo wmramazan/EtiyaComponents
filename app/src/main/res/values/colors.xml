@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#242342</color>
-    <color name="colorPrimaryDark">#1c1a31</color>
-    <color name="colorAccent">#1b89d8</color>
+    <color name="colorPrimary">@color/components_etiya</color>
+    <color name="colorPrimaryDark">@color/components_etiya_dark</color>
+    <color name="colorAccent">@color/components_blue</color>
 </resources>
