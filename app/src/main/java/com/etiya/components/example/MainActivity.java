@@ -1,4 +1,4 @@
-package com.etiya.components.sample;
+package com.etiya.components.example;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,6 @@ import com.etiya.components.EtiyaCardView;
 import com.etiya.components.EtiyaDialog;
 import com.etiya.components.EtiyaListItem;
 import com.etiya.components.EtiyaMenu;
-import com.etiya.components.R;
 
 public class MainActivity extends AppCompatActivity {
 

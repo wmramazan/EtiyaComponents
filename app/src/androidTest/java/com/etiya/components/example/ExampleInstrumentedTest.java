@@ -1,4 +1,4 @@
-package com.etiya.components.sample;
+package com.etiya.components.example;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
