@@ -166,7 +166,7 @@ public class EtiyaCardViewGroup extends LinearLayout {
 
     /**
      * Returns all expanded views.
-     * @return ArrayList<EtiyaCardView>
+     * @return ArrayList&lt;EtiyaCardView&gt;
      */
     public ArrayList<EtiyaCardView> getExpandedCardViews() {
         ArrayList<EtiyaCardView> expandedCardViews = new ArrayList<>();
