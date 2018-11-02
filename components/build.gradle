@@ -1,4 +1,30 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'EtiyaComponents'
+
+    publishedGroupId = 'com.etiya.components'
+    libraryName = 'EtiyaComponents'
+    artifact = 'etiya-components'
+
+    libraryDescription = 'An Android library which has UI components.'
+
+    siteUrl = 'https://github.com/wmramazan/EtiyaComponents'
+    gitUrl = 'https://github.com/wmramazan/EtiyaComponents.git'
+
+    libraryVersion = '0.1.0'
+
+    developerId = 'wmramazan'
+    developerName = 'Ramazan Vapurcu'
+    developerEmail = 'wmrmzn@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 28
@@ -37,3 +63,15 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+
+apply from: 'script.gradle'
