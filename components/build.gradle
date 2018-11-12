@@ -8,7 +8,7 @@ ext {
 
     publishedGroupId = 'com.etiya.components'
     libraryName = 'EtiyaComponents'
-    artifact = 'etiya-components'
+    artifact = 'components'
 
     libraryDescription = 'An Android library which has UI components.'
 

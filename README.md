@@ -26,7 +26,7 @@ Just add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.etiya.components:etiya-components:0.1.0'
+    implementation 'com.etiya.components:components:0.1.0'
 }
 ```
 
